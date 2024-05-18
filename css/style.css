@@ -1,0 +1,260 @@
+/* Importa la fuente Lato desde Google Fonts con pesos 300 y 400 y la hace disponible para su uso */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
+
+/* Define las variables CSS en el pseudo-clase :root, que pueden ser reutilizadas en todo el documento */
+:root {
+  --clr-black: #1c1c1c;        /* Color negro */
+  --clr-gray: #ececec;         /* Color gris */
+  --clr-white: #f7f7f7;        /* Color blanco */
+
+  /* Colores específicos para diferentes tipos */
+
+  --type-steel: #B7B7CE;       /* Color tipo acero */
+  --type-water: #DEF3FD;       /* Color tipo agua */
+  --type-bug: #f8d5a3;         /* Color tipo bicho */
+  --type-dragon: #97b3e6;      /* Color tipo dragón */
+  --type-electric: #FCF7DE;    /* Color tipo eléctrico */
+  --type-ghost: #735797;       /* Color tipo fantasma */
+  --type-fire: #FDDFDF;        /* Color tipo fuego */
+  --type-fairy: #fceaff;       /* Color tipo hada */
+  --type-ice: #96D9D6;         /* Color tipo hielo */
+  --type-fighting: #E6E0D4;    /* Color tipo lucha */
+  --type-normal: #F5F5F5;      /* Color tipo normal */
+  --type-grass: #DEFDE0;       /* Color tipo hierba */
+  --type-psychic: #eaeda1;     /* Color tipo psíquico */
+  --type-rock: #d5d5d4;        /* Color tipo roca */
+  --type-sinister: #705746;    /* Color tipo siniestro */
+  --type-ground: #f4e7da;      /* Color tipo tierra */
+  --type-poison: #98d7a5;      /* Color tipo veneno */
+  --type-flying: #F5F5F5;      /* Color tipo volador */
+}
+
+/* Reseteo de estilo para todos los elementos */
+* {
+  margin: 0;                       /* Elimina el margen */
+  padding: 0;                      /* Elimina el relleno */
+  box-sizing: border-box;          /* Define el box-sizing */
+  color: var(--clr-black);         /* Establece el color de texto por defecto */
+}
+
+/* Elimina los estilos predeterminados de las listas */
+ul {
+  list-style-type: none;           /* Elimina los marcadores de lista */
+}
+
+/* Estilo para botones */
+button {
+  background-color: transparent;   /* Fondo transparente */
+  border: 0;                       /* Sin borde */
+  border-radius: 0;                /* Sin bordes redondeados */
+}
+
+/* Estilo del cuerpo del documento */
+body {
+  background: #efefbb;             /* Color de fondo inicial */
+  background: linear-gradient(to right, #d4d3dd, #efefbb);  /* Gradiente de fondo */
+  font-family: "Lato", sans-serif; /* Fuente de texto */
+  display: flex;                   /* Usa flexbox */
+  flex-direction: column;          /* Dirección de flexbox vertical */
+  align-items: center;             /* Alinea los elementos al centro */
+  justify-content: center;         /* Centra los elementos verticalmente */
+  margin: 0;                       /* Elimina el margen del cuerpo */
+}
+
+/* Estilo del encabezado */
+header {
+  padding-block: 30px;             /* Espaciado superior e inferior */
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, .5);  /* Sombra del encabezado */
+}
+
+/* Estilo de navegación */
+.nav {
+  display: flex;                   /* Usa flexbox */
+  flex-direction: column;          /* Dirección vertical */
+  gap: 20px;                       /* Espacio entre elementos */
+  align-items: flex-start;         /* Alinea los elementos al inicio */
+  padding-inline: 20px;            /* Espaciado interno horizontal */
+}
+
+/* Estilo de la lista de navegación */
+.nav-list {
+  display: flex;                   /* Usa flexbox */
+  align-items: center;             /* Alinea los elementos al centro */
+  flex-wrap: wrap;                 /* Permite que los elementos se envuelvan */
+  gap: 20px;                       /* Espacio entre elementos */
+}
+
+/* Estilo de los botones del encabezado */
+.btn-header {
+  background-color: var(--clr-gray);  /* Fondo gris */
+  padding: 5px;                       /* Relleno */
+  border-radius: 100vmax;             /* Bordes redondeados */
+  cursor: pointer;                    /* Cursor de puntero */
+  text-transform: uppercase;          /* Texto en mayúsculas */
+  font-weight: 800;                   /* Peso de fuente negrita */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Sombra */
+  transition: .2s;                    /* Transición de 0.2 segundos */
+}
+
+/* Efecto hover para los botones del encabezado */
+.btn-header:hover {
+  transform: scale(1.1);              /* Escala el botón */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);  /* Sombra más grande */
+}
+
+/* Estilo para h1 */
+h1 {
+  letter-spacing: 3px;                /* Espaciado entre letras */
+}
+
+/* Clases específicas para tipos de botones */
+.ver-todos {
+  background-color: var(--clr-black); /* Fondo negro */
+  color: var(--clr-white);            /* Texto blanco */
+}
+
+/* Estilos específicos para cada tipo */
+.steel {
+  background-color: var(--type-steel); /* Fondo tipo acero */
+  color: var(--clr-black);             /* Texto negro */
+}
+
+.water {
+  background-color: var(--type-water); /* Fondo tipo agua */
+  color: var(--clr-black);             /* Texto negro */
+}
+
+/* Se repite el patrón para cada tipo de Pokémon */
+.bug {
+  background-color: var(--type-bug);
+  color: var(--clr-black);
+}
+
+.dragon {
+  background-color: var(--type-dragon);
+  color: var(--clr-black);
+}
+
+.electric {
+  background-color: var(--type-electric);
+  color: var(--clr-black);
+}
+
+.ghost {
+  background-color: var(--type-ghost);
+  color: var(--clr-black);
+}
+
+.fire {
+  background-color: var(--type-fire);
+  color: var(--clr-black);
+}
+
+.fairy {
+  background-color: var(--type-fairy);
+  color: var(--clr-black);
+}
+
+.ice {
+  background-color: var(--type-ice);
+  color: var(--clr-black);
+}
+
+.fighting {
+  background-color: var(--type-fighting);
+  color: var(--clr-black);
+}
+
+.normal {
+  background-color: var(--type-normal);
+  color: var(--clr-black);
+}
+
+.grass {
+  background-color: var(--type-grass);
+  color: var(--clr-black);
+}
+
+.psychic {
+  background-color: var(--type-psychic);
+  color: var(--clr-black);
+}
+
+.rock {
+  background-color: var(--type-rock);
+  color: var(--clr-black);
+}
+
+.sinister {
+  background-color: var(--type-sinister);
+  color: var(--clr-white);
+}
+
+.ground {
+  background-color: var(--type-ground);
+  color: var(--clr-black);
+}
+
+.poison {
+  background-color: var(--type-poison);
+  color: var(--clr-black);
+}
+
+.flying {
+  background-color: var(--type-flying);
+  color: var(--clr-black);
+}
+
+/* Estilo del contenedor de Pokémon */
+.poke-container {
+  display: flex;                      /* Usa flexbox */
+  flex-wrap: wrap;                    /* Permite que los elementos se envuelvan */
+  align-items: space-between;         /* Alinea los elementos con espacio entre ellos */
+  justify-content: center;            /* Centra los elementos horizontalmente */
+  margin: 0 auto;                     /* Centra el contenedor horizontalmente */
+  max-width: 1200px;                  /* Ancho máximo */
+}
+
+/* Estilo de cada tarjeta de Pokémon */
+.pokemon {
+  background-color: #eee;             /* Fondo gris claro */
+  border-radius: 10px;                /* Bordes redondeados */
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5); /* Sombra */
+  margin: 10px;                       /* Margen */
+  padding: 20px;                      /* Relleno */
+  text-align: center;                 /* Texto centrado */
+}
+
+/* Contenedor de imagen dentro de la tarjeta de Pokémon */
+.pokemon .img-container {
+  background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco semitransparente */
+  border-radius: 50%;                        /* Bordes redondeados */
+  width: 120px;                              /* Ancho fijo */
+  height: 120px;                             /* Alto fijo */
+  text-align: center;                        /* Texto centrado */
+}
+
+/* Imagen dentro del contenedor de imagen */
+.pokemon .img-container img {
+  max-width: 90%;                            /* Ancho máximo */
+  margin-top: 20px;                          /* Margen superior */
+}
+
+/* Información dentro de la tarjeta de Pokémon */
+.pokemon .info {
+  margin-top: 20px;                          /* Margen superior */
+}
+
+/* Número de Pokémon */
+.pokemon .info .number {
+  background-color: rgba(0, 0, 0, 0.1);      /* Fondo negro claro */
+  padding: 5px 10px;                         /* Relleno */
+  border-radius: 10px;                       /* Bordes redondeados */
+  font-size: 0.8em;                          /* Tamaño de fuente */
+}
+
+/* Nombre del Pokémon */
+.pokemon .info .name {
+  margin: 15px 0 7px;                        /* Margen superior e inferior */
+  letter-spacing: 1px;                       /* Espaciado entre letras */
+}

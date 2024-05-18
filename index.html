@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Especifica el conjunto de caracteres para el documento -->
+    <meta charset="UTF-8" />
+    <!-- Asegura la compatibilidad con IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Configura la vista para que sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Vincula el archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Título de la página -->
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <!-- Encabezado que contiene la navegación -->
+    <header>
+      <nav class="nav">
+        <!-- Logo de la Pokédex -->
+        <img src="img/logo.png" alt="Logo Pokédex">
+        <!-- Lista de navegación que contiene los botones para cada tipo de Pokémon -->
+        <ul class="nav-list">
+          <!-- Botón para ver todos los Pokémon -->
+          <li class="nav-item"><button class="btn btn-header ver-todos" id="ver-todos">Ver Todos</button></li>
+          <!-- Botones para cada tipo de Pokémon -->
+          <li class="nav-item"><button class="btn btn-header steel" id="steel">Steel - Acero</button></li>
+          <li class="nav-item"><button class="btn btn-header water" id="water">Water - Agua</button></li>
+          <li class="nav-item"><button class="btn btn-header bug" id="bug">Bug - Bicho</button></li>
+          <li class="nav-item"><button class="btn btn-header dragon" id="dragon">Dragon - Dragón</button></li>
+          <li class="nav-item"><button class="btn btn-header electric" id="electric">Electric - Eléctrico</button></li>
+          <li class="nav-item"><button class="btn btn-header ghost" id="ghost">Ghost - Fantasma</button></li>
+          <li class="nav-item"><button class="btn btn-header fire" id="fire">Fire - Fuego</button></li>
+          <li class="nav-item"><button class="btn btn-header fairy" id="fairy">Fairy - Hada</button></li>
+          <li class="nav-item"><button class="btn btn-header ice" id="ice">Ice - Hielo</button></li>
+          <li class="nav-item"><button class="btn btn-header fighting" id="fighting">Fighting - Lucha</button></li>
+          <li class="nav-item"><button class="btn btn-header normal" id="normal">Normal - Normal</button></li>
+          <li class="nav-item"><button class="btn btn-header grass" id="grass">Grass - Planta</button></li>
+          <li class="nav-item"><button class="btn btn-header psychic" id="psychic">Psychic - Psíquico</button></li>
+          <li class="nav-item"><button class="btn btn-header rock" id="rock">Rock - Roca</button></li>
+          <li class="nav-item"><button class="btn btn-header sinister" id="sinister">Sinister - Siniestro</button></li>
+          <li class="nav-item"><button class="btn btn-header ground" id="ground">Ground - Tierra</button></li>
+          <li class="nav-item"><button class="btn btn-header poison" id="poison">Poison - Veneno</button></li>
+          <li class="nav-item"><button class="btn btn-header flying" id="flying">Flying - Volador</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main>
+      <div class="poke-container" id="poke-container">
+        <!-- Contenedor de Pokémon de prueba que se debe borrar y reemplazar con datos de la API -->
+        <!--
+        <div class="pokemon" style="background-color: rgb(222,253,224);">
+          <div class="img-container">
+            <img src="https://pokeres.bastionbot.org/images/pokemon/1.png" alt="Bulbasaur">
+          </div>
+          <div class="info">
+            <span class="number">001</span>
+            <h3 class="name">Bulbasaur</h3>
+            <small class="type">Type: <span>grass</span></small>
+          </div>
+        </div>
+        -->
+      </div>
+    </main>
+    
+    <!-- Enlace a la inspiración del diseño en Dribbble -->
+    <!-- Design inspired by this Dribbble shot: https://dribbble.com/shots/5611109--Pokemon -->
+    <!-- Vincula el archivo de JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
